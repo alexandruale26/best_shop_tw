@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  animation: slideDown 0.2s ease-in;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
